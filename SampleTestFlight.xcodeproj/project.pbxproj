@@ -13,6 +13,7 @@
 		9987DEEC2878311100080EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9987DEEA2878311100080EFE /* Main.storyboard */; };
 		9987DEEE2878311200080EFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9987DEED2878311200080EFE /* Assets.xcassets */; };
 		9987DEF12878311200080EFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9987DEEF2878311200080EFE /* LaunchScreen.storyboard */; };
+		9987DEFA28784A0A00080EFE /* DateHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 9987DEF928784A0A00080EFE /* DateHelper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9987DEFA28784A0A00080EFE /* DateHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = SampleTestFlight;
+			packageProductDependencies = (
+				9987DEF928784A0A00080EFE /* DateHelper */,
+			);
 			productName = SampleTestFlight;
 			productReference = 9987DEE12878311100080EFE /* SampleTestFlight.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 9987DED82878311100080EFE;
+			packageReferences = (
+				9987DEF828784A0A00080EFE /* XCRemoteSwiftPackageReference "DateHelper" */,
+			);
 			productRefGroup = 9987DEE22878311100080EFE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -362,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9987DEF828784A0A00080EFE /* XCRemoteSwiftPackageReference "DateHelper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/melvitax/DateHelper";
+			requirement = {
+				kind = exactVersion;
+				version = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9987DEF928784A0A00080EFE /* DateHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9987DEF828784A0A00080EFE /* XCRemoteSwiftPackageReference "DateHelper" */;
+			productName = DateHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9987DED92878311100080EFE /* Project object */;
 }
